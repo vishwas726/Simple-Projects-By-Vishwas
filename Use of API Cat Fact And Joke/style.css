@@ -1,0 +1,32 @@
+.img{
+  
+    height: 142px;
+    width: 142px;
+    display: inline;
+    margin-right: 1rem;
+
+}
+div{
+    display: flex;
+    justify-content: space-around;
+
+    width: fit-content;
+    max-width: 70%;
+    height:fit-content;
+}
+#box{
+
+    display: flex;
+    width: 80%;
+    justify-content:normal ;
+    margin: 1rem;
+
+}
+.foot{
+    width: 70%;
+    margin: auto;
+    
+    height: 1000px;
+    border-bottom: 2px solid black;
+    
+}

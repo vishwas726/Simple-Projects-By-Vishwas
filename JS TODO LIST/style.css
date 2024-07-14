@@ -1,0 +1,25 @@
+body{
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+.con{
+    max-width: 80%;
+    text-align: center;
+
+}
+/* .get{
+
+    margin: 3rem 0rem;
+} */
+
+ul{
+    width: 100%;
+}
+
+li button{
+
+    margin-left: 2rem;
+}

@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>
+        Donate Now
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        color: White;
+        background-color: rgb(0, 0, 0);
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+    a:hover {
+        border-bottom: 4px solid rgb(118, 120, 223);
+        border-radius: 2px;
+        text-shadow: 2px 1px 25px rgb(226, 134, 20);
+
+    }
+
+    a {
+        color: rgb(66, 57, 237);
+        Text-decoration: none;
+        font-family: 'Bungee Spice', cursive;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+      
+
+       
+    display: block;
+   
+    border-radius: 20px;
+    text-decoration: none;
+    }
+
+    li { padding: 3px 22px;
+        list-style: none;
+        font-size: 1.3rem;
+
+    }
+
+    .header {
+
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: flex-start;
+      
+    }
+
+    .header::before {
+
+        background: url('im4.png') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+
+    .header,
+    .nav ul {
+        display: flex;
+
+    }
+.logo{
+    margin: 10px 34px;
+}
+
+    .logo img {
+        
+        height: 100%;
+         margin: 3px 6px;
+        box-shadow: 2px 1px 25px 6px rgb(226, 134, 20);
+        border-radius: 7px;
+    }
+
+ 
+
+    .input {
+        box-shadow: 2px 1px 25px 6px rgb(226, 134, 20);
+        /*x y blur spred*/
+        padding: 12px;
+        border-radius: 7px;
+        margin-left: 508px;
+
+        border: 3px solid rgb(34, 37, 216);
+        height: 24px;
+
+    }
+
+    @media (min-width<1199) {
+
+        .input {
+
+            margin-left: 50px;
+        }
+
+    }
+ 
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="donate">
+        </div>
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li><a href=" "> Home</a></li>
+                    <li><a href=" ">Category</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+
+                </ul>
+
+
+            </div>
+
+        </nav>
+        <div class="serch">
+
+            <input typr="text" class="input " placeholder="Search">
+        </div>
+    </div>
+</body>
+
+</html>

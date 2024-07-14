@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SawVish.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Francois+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        * {
+            font-family: 'Bree Serif', serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            font-family: 'Francois One', sans-serif;
+            margin: 10px;
+            padding: 9px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2fr 3fr 3fr;
+            border-bottom: 1px solid #0d0c0d;
+            /* border: 2px solid red; */
+        }
+
+        #nav_left {
+            grid-template-columns: 2fr 2fr 2fr;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 142px 86px 84px;
+            gap: 1%;
+            font-size: 0.9rem;
+            justify-items: end;
+
+
+
+        }
+
+        #logo {
+            margin: 2px;
+            font-size: 1.6rem;
+            justify-items: end;
+            color: #7d00ff;
+        }
+
+        #search {
+            align-items: center;
+            border: 1px solid #bfb9b9;
+            border-radius: 6px;
+            grid-template-columns: 35px auto;
+
+            box-shadow: 0 0 5px #ccc;
+            margin-left: 20px;
+        }
+
+        .search {
+            font-size: 1rem;
+            padding: 12px;
+            border: none;
+            outline: none;
+        }
+
+        ion-icon {
+            padding: 5px 8px 2px 11px;
+
+            font-size: 1.8rem;
+        }
+
+        .left_icon {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transition-property: all;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-in-out;
+        }
+
+       .search input[type=text]:focus {
+  border:none;
+}
+
+        .left_icon:hover {
+
+            color: #7d00ff;
+            transform: scale(1.1);
+
+        }
+
+        #search span {
+
+            color: #aea9a9;
+        }
+
+        #nav_left,
+        #search,
+        #logo {
+            display: grid;
+        }
+
+
+        .head {
+            display: flex;
+            align-items: center;
+
+            border-radius: 10px;
+            height: 482px;
+            margin-bottom: 72px;
+
+
+            padding: 30px;
+            margin-top: 72px;
+            font-size: 1.8rem;
+            margin: 42px;
+            /* background-color: #fff; */
+            box-shadow: 0 0 10px #ccc;
+            justify-content: space-around;
+
+        }
+
+        .head pre {
+            text-align: center;
+            padding: 30px;
+            background-color: rgb(249, 249, 249);
+            height: 82%;
+
+        }
+
+        .cloth img {
+            width: 100%;
+            height: auto;
+            height: 445px;
+        }
+
+        pre img {
+
+            height: 172px;
+            margin-right: 60px;
+            margin-top: 16px;
+        }
+
+        .button {
+            color: black;
+            background-color: white;
+            font-size: 1.3rem;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: white;
+            background-color: #7d00ff;
+
+        }
+
+        .button:active {
+
+
+            transform: scale(0.9);
+        }
+
+
+
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .category {
+            width: 23%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px #ccc;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .category img {
+            width: 100%;
+            height: auto;
+        }
+
+        .category h3 {
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .category li {
+            padding: 5px;
+            font-size: 16px;
+            color: #666;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .category li:hover {
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .category:hover {
+           transform: scale(1.1);
+        }
+
+  .main-section {
+
+padding-left:75px;
+padding-right:75px;
+
+}
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div id="logo">
+
+            <h1>
+                <p class="logo"> SawVish</p>
+            </h1>
+        </div>
+
+        <div id="search"> <span><ion-icon name="search-outline"></ion-icon></span> <input type="text" class="search"
+                placeholder="Try Saree, Kurti or Search by Product Code"> </div>
+
+        <div id="nav_left">
+            <div class="left_icon"> <ion-icon name="download-outline"></ion-icon> <span> Download App </span> </div>
+
+            <div class="left_icon"><ion-icon name="person-outline"></ion-icon> <span>Profile</span> </div>
+
+
+            <div class="left_icon"> <ion-icon name="cart-outline"></ion-icon> <span>Cart</span> </div>
+
+        </div>
+
+
+    </nav>
+
+    <div class="head">
+        <pre>
+    Shop with us today,
+Discover the best deals on the way,
+Find your perfect fit, in every way. 
+<img src="deal.png" alt="">
+<button class="button">Special Deals</button> 
+</pre>
+
+        <div class="cloth"> <img src="c1.jpg" alt=""> </div>
+
+
+
+    </div>
+
+
+    <div class="main-section">
+        <div class="category">
+            <img src="electronics.jpg" alt="Electronics">
+            <h3>Electronics</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Samsung</li>
+                <li>Sony</li>
+                <li>LG</li>
+                <li>Microsoft</li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="clothing.jpg" alt="Clothing">
+            <h3>Clothing</h3>
+            <ul>
+                <li>Nike</li>
+                <li>Adidas</li>
+                <li>Levi's</li>
+                <li>H&M</li>
+                <li>Zara</li>
+            </ul>
+        </div>
+        <div class="category">
+            <img src="footwear.jpg" alt="Footwear">
+            <h3>Footwear</h3>
+            <ul>
+                <li>Nike</li>
+                <li>Adidas</li>
+                <li>Puma</li>
+                <li>Sparks</li>
+                <li>Sneakers</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Francois+One&display=swap" rel="stylesheet">
+
+
+    <title> Vishwas College of Engineering And Technology </title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        * {
+            font-family: 'Bree Serif', serif;
+
+            color: rgb(255, 255, 255);
+
+        }
+
+
+        .navbar {
+            font-family: 'Francois One', sans-serif;
+            height: 82px;
+            display: flex;
+            border-bottom: 0.1px solid white;
+            align-items: center;
+
+
+        }
+
+        .home ul {
+            display: flex;
+        }
+
+        .home ul li {
+            list-style: none;
+
+        }
+
+        .home ul li a {
+            font-size: 1.2rem;
+            padding: 0px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            padding-bottom: 5px;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .home ul li a:hover {
+
+            color: black;
+            background-color: white;
+
+
+
+        }
+
+
+        .navbar::before {
+
+            position: absolute;
+            content: "";
+
+            width: 100%;
+
+            height: 506px;
+            top: 0px;
+            left: 0px;
+            background-color: black;
+            z-index: -1;
+            opacity: 0.;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 270px;
+            margin-bottom: 72px;
+
+            text-align: center;
+            padding: 1px 338px;
+            margin-top: 72px;
+
+        }
+
+        .main::before {
+            position: absolute;
+            content: "";
+            background: url('col2.jpg') no-repeat center center/cover;
+            top: 0%;
+            z-index: -1;
+            background-color: black;
+            opacity: 0.4;
+            height: 506px;
+            width: 100%;
+        }
+
+        .button {
+            color: black;
+            background-color: white;
+            font-size: 1.3rem;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: white;
+            background-color: rgb(67, 240, 67);
+
+        }
+
+        .button:active {
+
+
+            transform: scale(0.9);
+        }
+
+        .main h1 {
+
+            margin: 15px 1px;
+        }
+
+        .sec {
+            display: flex;
+
+        }
+
+        .box {
+            /*  box-shadow: -1px -11px 0px 2px #876161; */
+            border-radius: 20px;
+            display: block;
+            /* border: 3px solid #876161; */
+            padding: 30px;
+            height: 400px;
+            background-color: rgb(201 255 249 / 45%);
+            text-align: center;
+            margin: 36px 5px;
+            background-color: rgb(218 218 218 / 45%);
+            background-color: #fff;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .box img {
+
+            border-radius: 20px;
+            box-shadow: 0 0 10px #fffcfc;
+            height: 160px;
+            margin: auto;
+            display: block;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .center,
+        .info {
+            color: black;
+
+
+        }
+
+        .head {
+            text-align: center;
+            font-size: 2.5rem;
+            color: black;
+            margin: 30px auto;
+        }
+
+        .popular {
+
+
+            margin: 10px;
+
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .center {
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+
+        }
+
+        .info {
+            font-size: 1rem;
+        }
+
+        .box img:hover {
+
+            transform: scale(1.1);
+        }
+
+
+
+        #faculty,#contact-us,
+        #placement,
+        #research {
+
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px #ccc;
+
+            width: 94%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: black;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        .sections {
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+
+
+        .sections img {
+            box-shadow: 0 0 10px #ccc;
+            border-radius: 20px;
+
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+
+
+
+
+            height: 298px;
+            display: inline;
+
+        }
+
+
+
+        .sections img:hover {
+
+            transform: scale(1.02);
+        }
+
+
+
+        .sections p {
+
+            font-size: 1.2rem;
+            padding: 40px;
+            padding-top: 12px;
+            color: black;
+        }
+
+        .side {
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 12px;
+        }
+
+        .input {
+
+            border-radius: 5px;
+            border: 1px solid #bb86fc;
+            display: block;
+            width: 100%;
+            padding: 12px;
+            color: black;
+            font-size: 1.1rem;
+
+        }
+
+        .contact {
+
+            display: block;
+            margin: auto;
+            width: 63%;
+            background-color: #1E90FF;
+            border: 1px solid rgb(112, 112, 226);
+            /* margin: 25px 0px 12px 0px; */
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .form form label {
+            color: black;
+            display: block;
+            margin-top: 26px;
+            margin-bottom: 8px;
+        }
+
+        .form {
+
+            width: 100%;
+
+        }
+
+        form {
+
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+
+        footer {
+            background-color: #1E90FF;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+
+        <div class="home">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+
+                <li> <a href="#">Department</a> </li>
+                <li> <a href="#">Faculty</a> </li>
+                <li> <a href="#">Research</a> </li>
+                <li> <a href="#">Placement</a> </li>
+                <li> <a href="#">About us</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="main">
+        <h1>Vishwas College of Engineering And Technology </h1>
+        <pre>
+            College offers a transformative experience with opportunities to learn, grow,
+             and prepare for the future through academic and extracurricular activities. 
+             It's a time to broaden horizons and form lifelong connections.
+            </pre>
+        <button class="button">Register Now</button>
+    </div>
+    <section class="popular">
+
+        <h1 class="head">Departments</h1>
+        <div class="sec">
+
+            <div class="box">
+                <img src="d1.jpg" alt="department">
+
+                <h2 class="center">Computer Science Engineering</h2>
+                <p class="info">This branch of engineering involves the study of computer hardware, software, and their
+                    integration to solve complex problems in various fields.
+                </p>
+
+            </div>
+            <div class="box">
+                <img src="d2.jpg" alt="department">
+
+                <h2 class="center">Electronics and Communication Engineering</h2>
+                <p class="info">This engineering branch is focused on the design and development of electronic devices,
+                    circuits, communication systems, and their integration with computing systems.</p>
+
+            </div>
+            <div class="box">
+                <img src="d3.jpg" alt="department">
+
+                <h2 class="center">Mechanical Engineering</h2>
+                <p class="info">This field of engineering involves the design, analysis, and manufacturing of mechanical
+                    systems and machines, ranging from small components to large-scale systems.</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+
+
+        <div class="sec">
+
+            <div class="box">
+                <img src="d4.jpg" alt="department">
+
+                <h2 class="center">Civil Engineering</h2>
+                <p class="info">This branch of engineering deals with the design, construction, and maintenance of
+                    infrastructure such as buildings, roads, bridges, and water supply systems.
+                </p>
+
+            </div>
+            <div class="box">
+                <img src="d5.jpg" alt="department">
+
+                <h2 class="center">Electrical and Electronics Engineering</h2>
+                <p class="info">This engineering field is concerned with the design and development of electrical
+                    and electronic systems, ranging from small-scale electronic devices to power systems and
+                    communication networks.</p>
+
+            </div>
+            <div class="box">
+                <img src="d6.jpg" alt="department">
+
+                <h2 class="center">Chemical Engineering</h2>
+                <p class="info">This branch of engineering deals with the design, development, and operation of
+                    processes that involve the transformation of raw materials into useful products, such as fuels,
+                    chemicals, and pharmaceuticals.</p>
+
+            </div>
+        </div>
+    </section>
+    <div class="sections">
+
+        <section id="faculty">
+
+            <h2>Faculty</h2>
+            <div class="side">
+                <img src="s1.jpg" alt="department">
+
+                <p>Our faculty members are not only highly qualified and experienced but also come from diverse
+                    academic and professional backgrounds. They bring a wealth of knowledge, skills, and
+                    perspectives that enrich the learning experience of our students. Additionally, our faculty
+                    members are approachable and accessible, and are committed to providing personalized
+                    attention and mentorship to every student.</p>
+            </div>
+        </section>
+        <section id="research">
+            <h2>Research</h2>
+            <div class="side">
+                <img src="s2.jpg" alt="department">
+
+                <p>Our research culture is vibrant and dynamic, with a focus on interdisciplinary research that
+                    addresses real-world challenges and contributes to the advancement of knowledge. Our faculty
+                    members are engaged in cutting-edge research in areas such as artificial intelligence,
+                    sustainable energy, and healthcare, among others. We provide our students with numerous
+                    opportunities to participate in research projects, work alongside faculty members, and gain
+                    valuable research skills.</p>
+            </div>
+        </section>
+        <section id="placement">
+
+            <h2>Placement</h2>
+            <div class="side">
+                <img src="s3.jpg" alt="department">
+                <p>We have a strong industry connect and have established partnerships with leading companies
+                    and organizations in various sectors. Our placement cell works tirelessly to provide our
+                    students with excellent placement opportunities in top companies, both nationally and
+                    internationally. We offer training and skill development programs, mock interviews, and
+                    career guidance to prepare our students for successful careers.</p>
+            </div>
+        </section>
+        <section id="contact-us">
+            <section class="contact">
+                <div class="back">
+                    <h1 class="head">Contact Us</h1>
+                </div>
+                <div class="form">
+                    <form action="">
+
+                        <label for="name">Name : </label>
+                        <input type="text" id="name" placeholder="Enter Your Name " class="input " required>
+
+                        <label type="phone">Phone No : </label>
+                        <input type="number" placeholder="Enter Your Contact Number" id="phone" class="input " required>
+
+                        <label for="email">Email : </label>
+                        <input type="email" Placeholder="Enter Your Email Id " id="email" class="input " required>
+
+                        <label for="message">Message : </label>
+                        <textarea id="message" class="input " placeholder="Enter Your Message  " cols="" rows="6"
+                            required></textarea>
+
+                        <input type="submit" value="Submit" class="button submit">
+                    </form>
+                </div>
+            </section>
+
+        </section>
+
+
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2023 Vishwas Landge College of Engineering And Technology </p>
+    </footer>
+
+
+</body>
+
+</html>

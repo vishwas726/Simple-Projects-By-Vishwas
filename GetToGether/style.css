@@ -1,0 +1,289 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+
+    font-family: 'Bree Serif', serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  width:100px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:active{
+    transform:scale(0.9);
+}
+
+
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 1.125rem;
+    color: #555;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.hero {
+    padding: 50px 20px;
+    margin-top: 100px;
+ 
+}
+
+
+.banner {
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.banner:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("fr3.jpg") no-repeat top center/cover;
+    
+
+    /* background: linear-gradient(to bottom right, #e5d9ff, #0032ff); */
+    opacity: 5;
+z-index: -1;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000000;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #000000;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+
+.featured {
+    padding: 2rem;
+}
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+
+    width: 24rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.card p {
+    margin: 0 1rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card a {
+    display: block;
+
+    width: 120px;
+    padding: 0.5rem;
+    border: 2px solid #333;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 26px auto;
+}
+
+.card a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.updates {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    text-align: center;
+}
+
+.updates h2 {
+    margin-bottom: 2rem;
+}
+
+.updates ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.updates li {
+    margin-bottom: 1rem;
+    width: 294px;
+}
+
+.updates li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.updates li a:hover {
+    color: #007bff;
+}
+
+.travel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.travel img {
+    width: 90%;
+  
+}
+
+
+.events {
+    padding: 2rem;
+    text-align: center;
+}
+
+.events h2 {
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+footer {
+    padding: 30px;
+    background-color: #007bff;
+    color: #f2f2f2;
+    text-align: center;
+}
+@media only screen and (max-width: 513px) {
+  
+    nav a {
+        font-size: 14px;
+        padding: 1px;;
+    }
+    nav li {
+        margin-right: 1px;
+    }
+   
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+  
+   .side{
+      flex-direction: column;
+   } 
+  }
